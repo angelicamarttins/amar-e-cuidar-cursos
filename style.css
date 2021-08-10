@@ -15,6 +15,18 @@
     --dark-blue: #143774;
     --light-blue: #1792D2;
     --dark-gray: #707070;
-    --light-gray: rgba(255, 255, 255, 0.54);
+    --light-gray: #F8F8F8;
     --border: #EBEBEB;
+    --footer: rgba(255, 255, 255, 0.5);
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    padding: 1em 2em;
 }
