@@ -7,6 +7,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 :root {
@@ -29,4 +30,25 @@
     align-items: center;
     background-color: var(--light-gray);
     padding: 1em 2em;
+}
+
+/* Header - Logo */
+
+.header__logo {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.header__logo__title {
+    font: 600 2rem var(--second-font);
+    color: var(--dark-gray);
+    letter-spacing: 0;
+}
+
+.header__logo__subtitle {
+    font: 700 0.8rem var(--main-font);
+    color: var(--light-blue);
+    border-top: 1px solid var(--dark-blue);
+    padding-top: 0.35em;
+    letter-spacing: 2px;
 }
