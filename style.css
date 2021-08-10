@@ -7,6 +7,14 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'lora';
 }
 
+:root {
+    --main-font: 'Ubuntu', sans-serif; /* Logo Title and all other fonts */
+    --second-font: 'Lora', serif; /* Logo Subtitle, nav, all titles */
+    --dark-blue: #143774;
+    --light-blue: #1792D2;
+    --dark-gray: #707070;
+    --light-gray: rgba(255, 255, 255, 0.54);
+    --border: #EBEBEB;
+}
