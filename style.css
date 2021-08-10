@@ -52,3 +52,45 @@
     padding-top: 0.35em;
     letter-spacing: 2px;
 }
+
+/* Header - Nav */
+
+.header__nav__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav__a {
+    display: block;
+    padding: 0.5em;
+    font: 500 1rem var(--main-font);
+    color: var(--dark-gray);
+    /* border: 1px solid black; */
+}
+
+.header__nav__a:hover {
+    color: var(--light-blue);
+    transition: color 0.5s ease-out;
+    position: relative;
+    animation-name: scale;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scale {
+    100% {
+      top: 2px;
+    }
+}
+
+#current-page {
+    border-bottom: 2px solid var(--dark-gray);
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+#current-page:hover {
+    color: var(--dark-gray);
+}
