@@ -88,7 +88,9 @@
 #current-page {
     border-bottom: 2px solid var(--dark-gray);
     padding-bottom: 0.25em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
+    animation-duration: 0s;
+    cursor: default;
 }
 
 #current-page:hover {
