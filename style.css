@@ -121,7 +121,8 @@
     padding-top: 0.5em;
 }
 
-.main__p {
+.main__p,
+.main__list {
     text-align: justify;
     text-indent: 1em;
     padding: 0.25em 0;
