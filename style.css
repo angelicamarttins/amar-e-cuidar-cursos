@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -61,6 +60,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 .header__nav__a {
@@ -71,7 +71,7 @@
     /* border: 1px solid black; */
 }
 
-.header__nav__a:hover {
+.header__nav__a:hover{
     color: var(--light-blue);
     transition: color 0.5s ease-out;
     position: relative;
@@ -104,7 +104,6 @@
     max-width: 95%;
     margin: 2em auto;
     line-height: 1.25;
-    /* border: 1px solid black; */
 }
 
 /* Main - Article */
@@ -122,10 +121,61 @@
 }
 
 .main__p,
-.main__list {
+.main__list__li {
     text-align: justify;
     text-indent: 1em;
     padding: 0.25em 0;
     color: var(--darkest-gray);
     font-family: var(--main-font);
+    list-style: inside;
 }
+
+/* Sidebar - General Settings */
+
+.sidebar {
+    max-width: 95%;
+    margin: 1em auto;
+    /* border: 1px solid black; */
+}
+
+.sidebar--border {
+    border: 20px solid var(--border);
+    border-radius: 5px;
+}
+
+.sidebar__link:visited {
+    color: var(--darkest-gray);
+}
+
+.sidebar__link:hover {
+    color: var(--light-blue);
+    transition: color 0.5s ease-out;
+    position: relative;
+    animation-name: scale;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+/* Sidebar - Text */
+
+.sidebar__title {
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    color: var(--light-blue);
+    padding: 0.25em 0;
+}
+
+.sidebar__info {
+    font-family: var(--second-font);
+    color: var(--darkest-gray);
+    padding: 0.25em 0;
+}
+
+/* Sidebar - Boxes */
+
+.sidebar__boxes {
+    text-align: center;
+    padding: 1em;
+    margin: 2em 0;
+}
+
