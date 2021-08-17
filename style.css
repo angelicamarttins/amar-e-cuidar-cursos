@@ -15,6 +15,7 @@
     --second-font: 'Lora', serif; /* Logo Subtitle, nav, all titles */
     --dark-blue: #143774;
     --light-blue: #1792D2;
+    --darkest-gray: #333;
     --dark-gray: #707070;
     --light-gray: #F8F8F8;
     --border: #EBEBEB;
@@ -95,4 +96,35 @@
 
 #current-page:hover {
     color: var(--dark-gray);
+}
+
+/* Main */
+
+.main__container {
+    max-width: 95%;
+    margin: 2em auto;
+    line-height: 1.25;
+    /* border: 1px solid black; */
+}
+
+/* Main - Article */
+
+.main__img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.main__title {
+    font-family: var(--second-font);
+    font-weight: 600;
+    color: var(--dark-blue);
+    padding-top: 0.5em;
+}
+
+.main__p {
+    text-align: justify;
+    text-indent: 1em;
+    padding: 0.25em 0;
+    color: var(--darkest-gray);
+    font-family: var(--main-font);
 }
