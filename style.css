@@ -116,6 +116,7 @@
 .main__title {
     font-family: var(--second-font);
     font-weight: 600;
+    font-size: 1.75rem;
     color: var(--dark-blue);
     padding-top: 0.5em;
 }
@@ -147,7 +148,12 @@
     color: var(--darkest-gray);
 }
 
-.sidebar__link:hover {
+.sidebar__link {
+    border-bottom: 1px solid var(--light-blue);
+}
+
+.sidebar__link:hover,
+.footer__link:hover {
     color: var(--light-blue);
     transition: color 0.5s ease-out;
     position: relative;
@@ -192,5 +198,11 @@
 
 .footer__logo {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+}
+
+.footer__link {
+    background-color: var(--dark-blue);
+    color: var(--footer);
+    border-bottom: 1px solid var(--light-blue);
 }
