@@ -138,9 +138,8 @@ hr {
 /* Sidebar - General Settings */
 
 .sidebar {
-    max-width: 95%;
+    max-width: 75%;
     margin: 1em auto;
-    /* border: 1px solid black; */
 }
 
 .sidebar--border {
@@ -157,6 +156,7 @@ hr {
 }
 
 .sidebar__link:hover,
+.sidebar__link:focus
 .footer__link:hover {
     color: var(--light-blue);
     transition: color 0.5s ease-out;
@@ -213,7 +213,7 @@ hr {
 
 /* Media Query */
 
-@media (min-width: 850px){
+@media (min-width: 800px){
 
     .header,
     .header__nav__ul {
@@ -229,14 +229,14 @@ hr {
     }
 
     .main__container {
-        max-width: 75%;
+        max-width: 85%;
         display: flex;
         justify-content: space-between;
     }
 
     .main__content {
         margin-top: 2em;
-        width: 60%;
+        max-width: 60%;
         line-height: 1.75;
     }
 
@@ -247,7 +247,7 @@ hr {
     .sidebar {
         margin-top: 0;
         padding: 0 0 0 5em;
-        width: 40%;
+        max-width: 40%;
     }
 
     .sidebar__boxes {
@@ -257,4 +257,33 @@ hr {
     .sidebar__link {
         line-height: 1.65;
     }
+}
+
+@media (min-width: 1100px) {
+
+    .main__container {
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .main__container {
+        max-width: 65%;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .main__container {
+        max-width: 55%;
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .main__container {
+        max-width: 45%;
+    }
+
 }
