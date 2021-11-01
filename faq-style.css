@@ -120,9 +120,13 @@ hr {
 .main__title {
     font-family: var(--second-font);
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--dark-blue);
     padding-top: 0.5em;
+}
+
+.first__title {
+    font-size: 2rem;
 }
 
 .main__p,
