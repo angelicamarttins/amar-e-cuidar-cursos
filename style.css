@@ -32,9 +32,8 @@ hr {
     top: 2.25em;
     height: 11em;
     width: 13em;
-    background-color: var(--dark-gray);
+    background-color: rgba(235, 235, 235, 0.75);
     border-radius: 10px;
-    opacity: 0.75;
     /* border: 3px solid yellowgreen; */
     display: flex;
     flex-direction: column;
@@ -52,12 +51,22 @@ hr {
 }
 
 .float--menu__li {
-    padding: 0.65em 0;
-    color: var(--dark-blue);
-    opacity: 1;
+    margin: 1em 0;
+    padding-bottom: 0.1em;
+    color: var(--dark-gray);
     font-size: 1.15rem;
+    
+    
     /* border: 3px solid palevioletred */
 }
+
+.float--menu__li:hover {
+    transition: 0.15s;
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+/* Não esquecer de colocar as tags a na class ao invés de mero li. 
+Não esquecer também de que o menu float deve se manter quando a current-page for a de cursos */
 
 /* Header */
 
