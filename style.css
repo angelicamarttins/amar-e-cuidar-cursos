@@ -25,6 +25,40 @@ hr {
     margin: 1em 0;
 }
 
+/* Menu tests */
+
+.header__nav__float--menu {
+    position: absolute;
+    top: 2.25em;
+    height: 11em;
+    width: 13em;
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    opacity: 0.75;
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav__curso {
+    position: relative;
+}
+
+.float--menu__ul {
+    list-style: none;
+    /* border: 3px solid yellow */
+}
+
+.float--menu__li {
+    padding: 0.65em 0;
+    color: var(--dark-blue);
+    opacity: 1;
+    font-size: 1.15rem;
+    /* border: 3px solid palevioletred */
+}
+
 /* Header */
 
 .header {
