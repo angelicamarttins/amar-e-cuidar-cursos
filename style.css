@@ -168,6 +168,10 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
     padding-top: 0.5em;
 }
 
+.first__title {
+    font-size: 2rem;
+}
+
 .main__p,
 .main__list__li {
     text-align: justify;
