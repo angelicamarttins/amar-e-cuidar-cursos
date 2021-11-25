@@ -29,41 +29,42 @@ hr {
 
 .header__nav__float--menu {
     position: absolute;
-    top: 2.25em;
-    height: 11em;
+    /* display: none; */
+}
+
+.float--menu__ul {
+    position: relative;
+    top: 0.75em; 
+    left: 4.5em;
+    height: 9em;
     width: 13em;
     background-color: rgba(235, 235, 235, 0.75);
     border-radius: 10px;
-    /* border: 3px solid yellowgreen; */
+    list-style: none;
+    /* display: none; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.header__nav__curso {
-    position: relative;
-}
-
-.float--menu__ul {
-    list-style: none;
-    /* border: 3px solid yellow */
-}
-
 .float--menu__li {
-    margin: 1em 0;
+    margin: 0.5em 0;
     padding-bottom: 0.1em;
     color: var(--dark-gray);
     font-size: 1.15rem;
-    
-    
-    /* border: 3px solid palevioletred */
+}
+
+.float--menu__ul {
+    transition: all 2s ease-in-out; 
+    display: flex;
+    background-color: red;
 }
 
 .float--menu__li:hover {
-    transition: 0.15s;
+    transition: all 0.2s ease-in-out;
     border-bottom: 2px solid var(--dark-blue);
-}
+} 
 
 /* Não esquecer de colocar as tags a na class ao invés de mero li. 
 Não esquecer também de que o menu float deve se manter quando a current-page for a de cursos */
@@ -81,18 +82,18 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 
 /* Header - Logo */
 
-.header__logo {
+.logo {
     text-align: center;
     margin: 0.5em;
 }
 
-.header__logo__title {
+.logo__title {
     font: 600 2rem var(--second-font);
     color: var(--dark-gray);
     letter-spacing: 0;
 }
 
-.header__logo__subtitle {
+.logo__subtitle {
     font: 700 0.8rem var(--main-font);
     color: var(--light-blue);
     border-top: 1px solid var(--dark-blue);
@@ -102,7 +103,7 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 
 /* Header - Nav */
 
-.header__nav__ul {
+.nav__ul {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -110,27 +111,12 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
     list-style: none;
 }
 
-.header__nav__a {
+.nav__a {
     display: block;
     padding: 0.5em;
     font: 500 1rem var(--main-font);
     color: var(--dark-gray);
     /* border: 1px solid black; */
-}
-
-.header__nav__a:hover{
-    color: var(--light-blue);
-    transition: color 0.5s ease-out;
-    position: relative;
-    animation-name: scale;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes scale {
-    100% {
-      top: 2px;
-    }
 }
 
 #current-page {
@@ -147,7 +133,7 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 
 /* Main */
 
-.main__container {
+.main {
     max-width: 95%;
     margin: 2em auto;
     line-height: 1.25;
@@ -155,12 +141,12 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 
 /* Main - Article */
 
-.main__img {
+.content__img {
     width: 100%;
     border-radius: 5px;
 }
 
-.main__title {
+.content__title {
     font-family: var(--second-font);
     font-weight: 600;
     font-size: 1.75rem;
@@ -168,12 +154,12 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
     padding-top: 0.5em;
 }
 
-.first__title {
+.content__title--big {
     font-size: 2rem;
 }
 
-.main__p,
-.main__list__li {
+.content__p,
+.content__list__li {
     text-align: justify;
     text-indent: 1em;
     padding: 0.25em 0;
@@ -200,17 +186,6 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 
 .sidebar__link:visited {
     color: var(--darkest-gray);
-}
-
-.sidebar__link:hover,
-.sidebar__link:focus
-.footer__link:hover {
-    color: var(--light-blue);
-    transition: color 0.5s ease-out;
-    position: relative;
-    animation-name: scale;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
 }
 
 /* Sidebar - Text */
@@ -255,7 +230,23 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 .footer__link {
     background-color: var(--dark-blue);
     color: var(--footer);
-    border-bottom: 1px solid var(--light-blue);
+}
+/* Animations & transitions */
+
+.anchor--hover:hover,
+.anchor--hover:focus {
+    transition: color 0.5s ease-out;
+    color: var(--light-blue);
+    position: relative;
+    animation-name: scale;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scale {
+    100% {
+      top: 2px;
+    }
 }
 
 /* Media Query */
@@ -263,31 +254,31 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 @media (min-width: 800px){
 
     .header,
-    .header__nav__ul {
+    .nav__ul {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         
     }
 
-    .header__nav__a {
+    .nav__a {
         padding: 10px;
         border: 1px solid blac;
     }
 
-    .main__container {
+    .main {
         max-width: 85%;
         display: flex;
         justify-content: space-between;
     }
 
-    .main__content {
+    .content {
         margin-top: 2em;
         max-width: 60%;
         line-height: 1.75;
     }
 
-    .main__list__li {
+    .content__list__li {
         line-height: 1.35;
     }
 
@@ -308,28 +299,28 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
 
 @media (min-width: 1100px) {
 
-    .main__container {
+    .main {
         max-width: 75%;
     }
 }
 
 @media (min-width: 1300px) {
 
-    .main__container {
+    .main {
         max-width: 65%;
     }
 }
 
 @media (min-width: 1500px) {
 
-    .main__container {
+    .main {
         max-width: 55%;
     }
 }
 
 @media (min-width: 1800px) {
 
-    .main__container {
+    .main {
         max-width: 45%;
     }
 
