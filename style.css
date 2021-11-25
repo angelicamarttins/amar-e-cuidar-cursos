@@ -27,45 +27,47 @@ hr {
 
 /* Menu tests */
 
-.header__nav__float--menu {
+.dropdown {
     position: absolute;
-    /* display: none; */
-}
-
-.float--menu__ul {
-    position: relative;
-    top: 0.75em; 
-    left: 4.5em;
+    top: 4.25rem; 
+    left: 3em;
     height: 9em;
     width: 13em;
     background-color: rgba(235, 235, 235, 0.75);
     border-radius: 10px;
     list-style: none;
-    /* display: none; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.float--menu__li {
+.dropdown__li {
     margin: 0.5em 0;
     padding-bottom: 0.1em;
     color: var(--dark-gray);
     font-size: 1.15rem;
+    font-weight: bold;
 }
 
-.float--menu__ul {
-    transition: all 2s ease-in-out; 
-    display: flex;
-    background-color: red;
+.dropdown__a {
+    font: 500 1.05rem var(--main-font);
+    color: var(--dark-gray);
 }
 
-.float--menu__li:hover {
+.dropdown__a:hover {
     transition: all 0.2s ease-in-out;
     border-bottom: 2px solid var(--dark-blue);
 } 
 
+.nav__ul .nav__li .dropdown {
+    display: none;
+}
+
+.nav__ul .nav__li:hover > .dropdown,
+.nav__ul .nav__li .dropdown:hover {
+    display: flex;
+}
 /* Não esquecer de colocar as tags a na class ao invés de mero li. 
 Não esquecer também de que o menu float deve se manter quando a current-page for a de cursos */
 
@@ -109,6 +111,7 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
     justify-content: center;
     align-items: center;
     list-style: none;
+    position: relative;
 }
 
 .nav__a {
@@ -116,7 +119,6 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
     padding: 0.5em;
     font: 500 1rem var(--main-font);
     color: var(--dark-gray);
-    /* border: 1px solid black; */
 }
 
 #current-page {
