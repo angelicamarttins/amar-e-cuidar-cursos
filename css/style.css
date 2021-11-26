@@ -60,9 +60,9 @@ hr {
     border-bottom: 2px solid var(--dark-blue);
 } 
 
-/* .nav__ul .nav__li .dropdown {
+.nav__ul .nav__li .dropdown {
     display: none;
-} */
+}
 
 .nav__ul .nav__li:hover > .dropdown,
 .nav__ul .nav__li .dropdown:hover {
