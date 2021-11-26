@@ -149,9 +149,10 @@ hr {
 .content__title {
     font-family: var(--second-font);
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--dark-blue);
     padding-top: 0.5em;
+    text-align: justify;
 }
 
 .content__title--big {
@@ -246,7 +247,11 @@ hr {
     text-align: center;
     font-size: 30px;
     box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
+    z-index: 1;
+}
+
+.whatsapp-icon > i {
+    margin-top: 16px;
 }
 
 /* Animations & transitions */
@@ -270,7 +275,6 @@ hr {
 /* Media Query */
 
 @media (min-width: 800px){
-
     .header,
     .nav__ul {
         flex-direction: row;
@@ -281,7 +285,6 @@ hr {
 
     .nav__a {
         padding: 10px;
-        border: 1px solid blac;
     }
 
     .dropdown {
@@ -321,30 +324,25 @@ hr {
 }
 
 @media (min-width: 1100px) {
-
     .main {
         max-width: 75%;
     }
 }
 
 @media (min-width: 1300px) {
-
     .main {
         max-width: 65%;
     }
 }
 
 @media (min-width: 1500px) {
-
     .main {
         max-width: 55%;
     }
 }
 
 @media (min-width: 1800px) {
-
     .main {
         max-width: 45%;
     }
-
 }
