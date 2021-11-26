@@ -25,7 +25,7 @@ hr {
     margin: 1em 0;
 }
 
-/* Menu tests */
+/* Dropdown menu */
 
 .dropdown {
     position: absolute;
@@ -68,8 +68,6 @@ hr {
 .nav__ul .nav__li .dropdown:hover {
     display: flex;
 }
-/* Não esquecer de colocar as tags a na class ao invés de mero li. 
-Não esquecer também de que o menu float deve se manter quando a current-page for a de cursos */
 
 /* Header */
 
@@ -284,6 +282,11 @@ Não esquecer também de que o menu float deve se manter quando a current-page f
     .nav__a {
         padding: 10px;
         border: 1px solid blac;
+    }
+
+    .dropdown {
+        top: 2.25em;
+        left: 0;
     }
 
     .main {
