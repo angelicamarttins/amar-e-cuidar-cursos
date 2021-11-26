@@ -44,15 +44,15 @@ hr {
 
 .dropdown__li {
     margin: 0.5em 0;
-    padding-bottom: 0.1em;
     color: var(--dark-gray);
-    font-size: 1.15rem;
-    font-weight: bold;
 }
 
 .dropdown__a {
     font: 500 1.05rem var(--main-font);
     color: var(--dark-gray);
+    display: block;
+    padding: 0.25em 0.75em;
+    box-sizing: content-box
 }
 
 .dropdown__a:hover {
@@ -60,9 +60,9 @@ hr {
     border-bottom: 2px solid var(--dark-blue);
 } 
 
-.nav__ul .nav__li .dropdown {
+/* .nav__ul .nav__li .dropdown {
     display: none;
-}
+} */
 
 .nav__ul .nav__li:hover > .dropdown,
 .nav__ul .nav__li .dropdown:hover {
