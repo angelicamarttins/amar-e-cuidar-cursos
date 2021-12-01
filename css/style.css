@@ -1,5 +1,4 @@
 /* General Settings */
-
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
@@ -26,7 +25,6 @@ hr {
 }
 
 /* Header */
-
 .header {
     display: flex;
     flex-flow: column nowrap;
@@ -37,7 +35,6 @@ hr {
 }
 
 /* Header - Logo */
-
 .logo {
     text-align: center;
     margin: 0.5em;
@@ -58,7 +55,6 @@ hr {
 }
 
 /* Header - Nav */
-
 .nav__ul {
     display: flex;
     flex-flow: column nowrap;
@@ -88,7 +84,6 @@ hr {
 }
 
 /* Header - Dropdown menu */
-
 .dropdown {
     position: absolute;
     top: 4.25rem; 
@@ -139,7 +134,6 @@ hr {
 }
 
 /* Main */
-
 .main {
     max-width: 95%;
     margin: 2em auto;
@@ -147,7 +141,6 @@ hr {
 }
 
 /* Main - Article */
-
 .content__img {
     width: 100%;
     border-radius: 5px;
@@ -166,6 +159,10 @@ hr {
     font-size: 2rem;
 }
 
+.content__title--price {
+    text-align: center;
+}
+
 .content__p,
 .content__list__li {
     text-align: justify;
@@ -177,7 +174,6 @@ hr {
 }
 
 /* Sidebar - General Settings */
-
 .sidebar {
     max-width: 75%;
     margin: 1em auto;
@@ -197,7 +193,6 @@ hr {
 }
 
 /* Sidebar - Text */
-
 .sidebar__title {
     font-family: var(--second-font);
     font-size: 1.5rem;
@@ -212,7 +207,6 @@ hr {
 }
 
 /* Sidebar - Boxes */
-
 .sidebar__boxes {
     text-align: center;
     padding: 1em;
@@ -220,7 +214,6 @@ hr {
 }
 
 /* Footer */
-
 .footer {
     background-color: var(--dark-blue);
     color: var(--footer);
@@ -241,7 +234,6 @@ hr {
 }
 
 /*  WhatsApp Icon */
-
 .whatsapp__a {
     position: fixed;
     width: 60px;
@@ -262,7 +254,6 @@ hr {
 }
 
 /* Animations & transitions */
-
 .anchor--hover:hover,
 .anchor--hover:focus {
     transition: color 0.5s ease-out;
@@ -280,7 +271,6 @@ hr {
 }
 
 /* Media Query */
-
 @media (min-width: 800px){
     .header,
     .nav__ul {
@@ -304,6 +294,10 @@ hr {
         display: flex;
         justify-content: space-between;
     }
+
+    .content__title--big {
+        text-align: start;
+    }    
 
     .content {
         margin-top: 2em;
