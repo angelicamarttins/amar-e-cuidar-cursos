@@ -25,50 +25,6 @@ hr {
     margin: 1em 0;
 }
 
-/* Dropdown menu */
-
-.dropdown {
-    position: absolute;
-    top: 4.25rem; 
-    left: 3em;
-    height: 9em;
-    width: 13em;
-    background-color: rgba(235, 235, 235, 0.75);
-    border-radius: 10px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.dropdown__li {
-    margin: 0.5em 0;
-    color: var(--dark-gray);
-}
-
-.dropdown__a {
-    font: 500 1.05rem var(--main-font);
-    color: var(--dark-gray);
-    display: block;
-    padding: 0.25em 0.75em;
-    box-sizing: content-box
-}
-
-.dropdown__a:hover {
-    transition: all 0.2s ease-in-out;
-    border-bottom: 2px solid var(--dark-blue);
-} 
-
-.nav__ul .nav__li .dropdown {
-    display: none;
-}
-
-.nav__ul .nav__li:hover > .dropdown,
-.nav__ul .nav__li .dropdown:hover {
-    display: flex;
-}
-
 /* Header */
 
 .header {
@@ -129,6 +85,57 @@ hr {
 
 #current-page:hover {
     color: var(--dark-gray);
+}
+
+/* Header - Dropdown menu */
+
+.dropdown {
+    position: absolute;
+    top: 4.25rem; 
+    left: 3em;
+    width: 13em;
+    padding: 0.5em;
+    background-color: rgba(235, 235, 235, 0.75);
+    border-radius: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown__li {
+    margin: 0.5em 0;
+    color: var(--dark-gray);
+}
+
+.dropdown__a {
+    font: 500 1.05rem var(--main-font);
+    color: var(--dark-gray);
+    display: block;
+    padding: 0.25em 0.75em;
+    box-sizing: content-box
+}
+
+.dropdown__a:hover {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid var(--dark-blue);
+} 
+
+.dropdown__p {
+    font: 500 1.05rem var(--main-font);
+    color: var(--dark-blue);
+    text-align: center;
+    margin-top: 1em;
+}
+
+.nav__ul .nav__li .dropdown {
+    display: none;
+}
+
+.nav__ul .nav__li:hover > .dropdown,
+.nav__ul .nav__li .dropdown:hover {
+    display: flex;
 }
 
 /* Main */
@@ -235,7 +242,7 @@ hr {
 
 /*  WhatsApp Icon */
 
-.whatsapp-icon {
+.whatsapp__a {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -250,7 +257,7 @@ hr {
     z-index: 1;
 }
 
-.whatsapp-icon > i {
+.whatsapp__icon {
     margin-top: 16px;
 }
 
