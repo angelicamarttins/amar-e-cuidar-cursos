@@ -202,6 +202,7 @@ hr {
 
 .sidebar__info {
     font-family: var(--second-font);
+    font-size: 1.1rem;
     color: var(--darkest-gray);
     padding: 0.25em 0;
 }
